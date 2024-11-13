@@ -1,3 +1,5 @@
+@import url("https://fonts.googleapis.com/css2?family=Merriweather:ital,wght@0,300;0,400;0,700;0,900;1,300;1,400;1,700;1,900&family=Open+Sans:ital,wght@0,300..800;1,300..800&family=Poppins:ital,wght@0,100;0,200;0,300;0,400;0,500;0,600;0,700;0,800;0,900;1,100;1,200;1,300;1,400;1,500;1,600;1,700;1,800;1,900&display=swap");
+
 * {
   padding: 0;
   margin: 0;
@@ -5,7 +7,89 @@
 }
 
 body {
-  background: url(./bg.jpg) no-repeat center center / cover;
+  font-family: "Poppins", sans-serif;
   width: 100vw;
   height: 100vh;
+  background: url(./bg.jpg) no-repeat center center / cover;
+
+  font-size: 1rem;
+  overflow: hidden;
+}
+
+.container {
+  width: 450px;
+  position: relative;
+  top: 50%;
+  left: 50%;
+  transform: translate(-50%, -50%);
+}
+
+.sign__in,
+.sign__up {
+  color: #fff;
+  position: relative;
+  top: 0;
+  left: 0;
+  background: rgba(48, 30, 30, 0.1);
+  border: 1px solid rgba(255, 255, 255, 0.5);
+  padding: 3rem 2rem;
+  border-radius: 1rem;
+  backdrop-filter: blur(30px);
+}
+
+.container h1 {
+  font-size: 2.5rem;
+  text-align: center;
+  margin-bottom: 2rem;
+}
+
+.social {
+  display: flex;
+  justify-content: center;
+  gap: 1rem;
+}
+
+.social__link {
+  border: 1px solid #fff;
+  width: 3rem;
+  height: 3rem;
+  color: #fff;
+  text-decoration: none;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  border-radius: 50%;
+  transition: all 0.3s ease;
+}
+
+.social__link:hover {
+  background: #fff;
+  color: #222;
+}
+
+p {
+  text-align: center;
+  margin: 1rem 0;
+}
+
+.container form input {
+  display: block;
+  width: 100%;
+  border: none;
+  outline: none;
+  padding: 1.2rem;
+  color: #fff;
+  background-color: rgba(255, 255, 255, 0.15);
+  margin-top: 1rem;
+  font-size: 1rem;
+}
+
+.container form input::placeholder {
+  color: #fff;
+}
+
+.container form input[type="submit"] {
+  background: #47d2fc;
+  transition: all 0.3s ease;
+  cursor: pointer;
 }
